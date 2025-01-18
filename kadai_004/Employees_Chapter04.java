@@ -28,7 +28,7 @@ public class Employees_Chapter04 {
 					CREATE TABLE employees (
 					id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 					name VARCHAR(60) NOT NULL,
-					emaill VARCHAR(255) NOT NULL,
+					email VARCHAR(255) NOT NULL,
 					age INT(11),
 					address VARCHAR(255)
 					);
@@ -46,13 +46,13 @@ public class Employees_Chapter04 {
 			if (statement != null) {
 				try {
 					statement.close();
-				} catch (SQLException ignone) {
+				} catch (SQLException ignore) {
 				}
 			}
 			if (con != null) {
 				try {
 					con.close();
-				} catch (SQLException ignone) {
+				} catch (SQLException ignore) {
 				}
 			}
 		}
